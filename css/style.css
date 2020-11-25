@@ -1,0 +1,296 @@
+@import url("https://fonts.googleapis.com/css2?family=Vollkorn&display=swap");
+
+:root {
+  --showcase-text: #ff8c00;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Vollkorn", serif;
+  font-size: 15px;
+  line-height: 1.7rem;
+}
+
+.main-header {
+  border-bottom: 1px solid #6495ed;
+  background-color: transparent;
+  position: fixed; /*or position absolute: when scroll down*/
+  width: 100%;
+  height: 127px;
+  overflow: hidden;
+}
+
+.down {
+  margin-top: 30px;
+}
+.logo {
+  letter-spacing: 0.4rem;
+  margin: 20px 20px;
+}
+
+.row > div > h1 > span:last-child {
+  color: var(--showcase-text);
+  border-bottom: 1px solid var(--showcase-text);
+  font-size: 40px;
+}
+
+.row > div > h1 > span:first-child {
+  font-size: 30px;
+  color: #ffffff;
+}
+
+.row > div > p {
+  font-size: 20px;
+  color: #ffffff;
+}
+.row > div > h1 {
+  letter-spacing: 2px;
+  line-height: 60px;
+}
+/*
+.container .row > div {
+  background: rgba(135, 206, 235, 0.2);
+}
+*/
+/*
+.container .row > div > a {
+  text-decoration: none;
+  border: 1px solid #6495ed;
+  position: relative;
+  line-height: 80px;
+  background: #1e90ff;
+  padding: 10px;
+  margin: 10px;
+  font-family: inherit;
+  color: #b0e0e6;
+  font-size: 20px;
+  border-radius: 10px;
+}
+.container .row > div > a > span {
+  color: #fffff0;
+}
+*/
+.moveTextUp {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  /*position: relative;*/
+  margin-top: -500px;
+}
+
+.moveTextUp > div {
+  /*position: relative;*/
+  width: 80%;
+}
+.container {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.navbar {
+  text-transform: uppercase;
+}
+
+.main-header.scrolled {
+  background-color: #4169e1 !important;
+  transition: background-color 200ms ease;
+}
+
+.main-header.scrolled a {
+  color: #add8e6;
+}
+
+.main-header.scrolled > .row > div {
+  color: #add8e6;
+}
+
+.main-header.scrolled a:hover {
+  border-bottom: 1px solid #87cefa;
+}
+
+.navbar li {
+  display: inline-block;
+  align-items: center;
+  margin: 10px 20px;
+  text-align: center;
+  list-style-type: none;
+}
+
+.navbar li a {
+  color: #000000;
+}
+.navbar li a:hover {
+  border-bottom: 1px solid #000000;
+}
+
+.showcase {
+  width: 100%;
+  height: 700px;
+}
+
+.features {
+  width: 100%;
+  height: 700px;
+  border-top: 2px solid #1e90ff;
+  border-bottom: 2px solid black;
+  color: #000000;
+  background-color: #f0f8ff;
+}
+
+.container div p {
+  color: inherit;
+}
+
+.services {
+  width: 100%;
+  height: 770px;
+  background-color: #4169e1;
+  color: #add8e6;
+}
+
+.contact {
+  width: 100%;
+  height: 750px;
+  background-color: #add8e6;
+}
+
+.icon-color {
+  color: #32cd32;
+}
+
+.main-footer {
+  color: #add8e6;
+  background-color: #4169e1;
+}
+
+.color-text-head {
+  background-color: #000000;
+  padding: 20px;
+  color: #ffffff;
+  margin-top: 0;
+  margin-bottom: 50px;
+  width: 100%;
+}
+
+#btnUP {
+  display: none;
+  text-decoration: none;
+  border: none;
+  color: black;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  cursor: pointer;
+  padding: 15px;
+}
+
+#btnUP:hover {
+  color: #e6e6fa;
+  outline-style: none;
+}
+#btnUP i:hover {
+  background-color: #4169e1;
+  border-radius: 50%;
+  border: 1px solid #e6e6fa;
+}
+.services ul li {
+  list-style-type: none;
+  font-size: 20px;
+  line-height: 3rem;
+}
+
+.offer {
+  font-size: 50px;
+
+  line-height: 3rem;
+}
+
+.color-text-head1 {
+  margin-bottom: 50px;
+  font-size: 20px;
+}
+
+textarea[name="message"] {
+  resize: none;
+}
+
+.contact form {
+  color: #9400d3;
+  width: 100%;
+  margin: 10px;
+  padding: 20px;
+  background: #f9f9f9;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.contact-icons-color {
+  color: #1e90ff;
+}
+
+.contact-icons-color p {
+  color: #9400d3 !important;
+}
+
+form > div > input {
+  padding: 5px;
+  margin: 3px;
+  width: 100%;
+}
+
+form > div > textarea {
+  height: 200px;
+  margin: 3px;
+  width: 100%;
+}
+
+form > button {
+  width: 100%;
+  margin: 3px;
+  font-size: 15px;
+  color: #add8e6;
+  background-color: #4169e1;
+  padding: 10px;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid #4169e1;
+  cursor: pointer;
+  font-weight: 600;
+}
+form > button:hover {
+  transform: scale(0.98);
+}
+
+@media (max-width: 863px) {
+  .features {
+    height: 1200px;
+  }
+}
+
+@media (max-width: 862px) {
+  .contact {
+    height: 1000px;
+  }
+}
+
+@media (max-width: 443px) {
+  .contact {
+    height: 1100px;
+  }
+}
+@media (max-width: 414px) {
+  .contact {
+    height: 1100px;
+  }
+}
